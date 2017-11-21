@@ -1,0 +1,291 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "answerSlot",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "Nymeria",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Harrenhal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Warg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Ice",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "cersei",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "joffrey",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "ladder",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "walda",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "flower",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "longclaw",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "astapor",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "olly",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "mockingbird",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "cobbler",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "tyrion",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "wylis",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "essos",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "westeros",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "reek",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "unsullied",
+              "synonyms": []
+            }
+          }
+        ]
+      },
+      {
+        "name": "decisionSlot",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "Yes",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "No",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Naah",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Yeah",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Yup",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Nope",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": [
+          "alexa help",
+          "help",
+          "please help",
+          "help me",
+          "help me alexa",
+          "i need help"
+        ]
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "answerIntent",
+        "samples": [
+          "The answer is {answer}",
+          "{answer}",
+          "{answer} is answer",
+          "My answer is {answer}",
+          "answer is {answer}"
+        ],
+        "slots": [
+          {
+            "name": "answer",
+            "type": "answerSlot"
+          }
+        ]
+      },
+      {
+        "name": "customIntent",
+        "samples": [
+          "Valar Dohareis",
+          "hello",
+          "hola",
+          "vlar dohris",
+          "volar dohris",
+          "volar doharis",
+          "vala doharis",
+          "valar dohaeris",
+          "valaar doharis",
+          "vaalaar doharis",
+          "valar dohairis",
+          "vlar doharis",
+          "volar dohaeris",
+          "vala dohaeris",
+          "valaar dohayris",
+          "valaa dohaeris",
+          "vala dohaarice",
+          "vala doharees",
+          "volar doharice",
+          "volar dohaaris"
+        ],
+        "slots": []
+      },
+      {
+        "name": "quizIntent",
+        "samples": [
+          "{decision}",
+          "Ready",
+          "I'm Ready",
+          "Yeah Ready"
+        ],
+        "slots": [
+          {
+            "name": "decision",
+            "type": "decisionSlot"
+          }
+        ]
+      },
+      {
+        "name": "UnhandledIntent",
+        "samples": [
+          "basd fasd",
+          "hdfasdf sdfas ewqrqwe",
+          "asdads asdnjafsasd",
+          "asdasdadsad",
+          "asdadsjnwwqi",
+          "open quiz of game",
+          "quiz of game",
+          "game of thrones"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "quiz of thrones"
+  }
+}
